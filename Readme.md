@@ -1,7 +1,10 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 Student: Aleksandra Pavlushina
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f5d6cc914b0b50f3ca6660dd2ae35a41a7e0c8e
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
