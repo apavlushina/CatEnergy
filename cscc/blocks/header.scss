@@ -1,0 +1,31 @@
+.page-header {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+
+.page-header__logo-image {
+  width: ;
+  height: ;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: block;
+  }
+
+  .page-header__logo-image,
+  .page-header__title {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+}

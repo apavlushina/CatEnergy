@@ -1,0 +1,15 @@
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@reset-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
