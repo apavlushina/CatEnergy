@@ -1,0 +1,1 @@
+{"version":3,"file":"options.css","sources":["blocks/options.scss"],"sourcesContent":[".options__link {\n  width: 280px;\n}\n"],"names":[],"mappings":"AAAA,AAAA,cAAc,CAAC;EACb,KAAK,EAAE,KAAK,GACb"}
