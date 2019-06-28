@@ -12,19 +12,51 @@ img {
   max-width: 100%;
   height: auto; }
 
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.page-main {
+  width: 100%; }
+
 .page-header {
-  width: 100%;
-  height: 65px; }
+  width: 320px;
+  margin: 0 auto; }
 
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 5px;
   padding: 15px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-around;
   align-items: center;
   text-align: center; }
+
+.main-nav__list {
+  display: none; }
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 100%;
+    min-height: 85px;
+    margin: 0 auto; }
+  .page-header__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .main-nav {
+    min-width: 400px;
+    display: flex;
+    margin-left: auto;
+    justify-content: space-around; }
+  .main-nav__toggle {
+    display: none; } }
 
 .slogan {
   width: 320px;
@@ -46,6 +78,21 @@ img {
   display: block;
   margin: auto;
   margin-top: -110px; }
+
+@media (min-width: 768px) {
+  .slogan {
+    width: 100%; }
+  .slogan__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    background-color: inherit;
+    background-image: none;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 50px; }
+  .slogan__image {
+    width: 60%;
+    height: 60%; } }
 
 .options {
   width: 320px;
@@ -77,6 +124,19 @@ img {
   margin: 20px auto;
   padding: 10px 20px; }
 
+@media (min-width: 768px) {
+  .options {
+    width: 100%; }
+  .options__wrapper {
+    width: 768px;
+    margin: 0 auto; }
+  .options__item {
+    width: 708px; }
+  .options__link {
+    margin-left: 50px;
+    margin-top: -500px;
+    margin-bottom: 440px; } }
+
 .benefits {
   width: 320px;
   margin: 0 auto; }
@@ -98,15 +158,38 @@ img {
   width: 280px;
   margin-top: 5px; }
 
+@media (min-width: 768px) {
+  .benefits {
+    width: 100%; }
+  .benefits__wrapper {
+    width: 708px;
+    margin: 0 auto; }
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .benefits__item {
+    width: 250px; } }
+
 .example {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto; }
+
+.example__wrapper {
   box-sizing: border-box;
   padding: 15px;
   background-color: #dcdcdc; }
 
+@media (min-width: 768px) {
+  .example {
+    width: 100%; }
+  .example__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box; } }
+
 .for-dilers {
-  width: 310px;
+  width: 320px;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
@@ -115,9 +198,25 @@ img {
   justify-content: space-around;
   align-items: center; }
 
+.for-dilers__grey {
+  background-color: #dcdcdc; }
+
 .iframe {
   margin: 0 auto;
   width: 320px; }
+
+@media (min-width: 768px) {
+  .for-dilers {
+    width: 768px;
+    display: flex;
+    justify-content: space-around; }
+  .for-dilers__p:first-child {
+    width: 140px;
+    text-align: left;
+    text-transform: uppercase; }
+  .for-dilers__p:last-child {
+    width: 180px;
+    text-align: right; } }
 
 .page-footer {
   width: 100%;
@@ -143,6 +242,50 @@ img {
   text-align: center;
   margin: 0 auto;
   padding-top: 40px;
+  background-color: #dcdcdc; }
+
+.catalog {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.main-title__catalog {
+  width: 320px;
+  margin: 15px auto;
+  padding: 0;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 70px;
+  box-sizing: border-box;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc; }
+
+.catalog__list {
+  width: 320px;
+  margin: 5px auto;
+  padding: 15px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; }
+
+.catalog__item {
+  width: 320px;
+  min-height: 210px;
+  margin: 5px auto;
+  padding: 10px 15px;
+  display: block;
+  box-sizing: border-box;
+  position: relative; }
+
+.catalog__item::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  margin: 0 auto;
+  right: 0px;
+  bottom: 1px;
+  left: 0px;
+  height: 1px;
   background-color: #dcdcdc; }
 
 .main-nav {
