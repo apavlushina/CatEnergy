@@ -13,7 +13,7 @@
     <img class="page-header__logo-image" src="img/logo-mobile.png"  width="35px" height="35px" alt="Logo">
     <img class="page-header__title" src="img/slogan-logo.png"  alt="CAT ENERGY">
     <img class="page-header__title-logo-image" src="img/logo-name-tablet.png" alt="Logo">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active"><a>Main</a></li>
@@ -27,22 +27,23 @@
 
   <main>
 
-        <h1 class="main-title bordertop">Programm selection</h1>
-        <p>Fill in the questionarie and we will choose the best programm for your cat</p>
+    <h1 class="request-title">Programm selection</h1>
 
     <form class="choose-the-programm" method="get" action="https://echo.htmlacademy.ru">
 
-    <section>
+    <section class="contacts">
+
+      <p class="request">Fill in the questionarie and <br> we will choose the best programm for your cat</p>
       <p>
-        <label class="label-name" for="name">Name</label>
+        <label class="label-name" for="name">Name:</label>
         <input class="input-name" id="name" type="text" name="name" placeholder="Sissi">
       </p>
       <p>
-        <label class="label-weight" for="weight">Weight</label>
+        <label class="label-weight" for="weight">Weight:</label>
         <input class="input-weight" id="weight" type="text" name="weight" placeholder="5kg">
       </p>
       <p>
-        <label class="label-age" for="age">Age (years)</label>
+        <label class="label-age" for="age">Age (years):</label>
         <input class="input-age" id="name" type="text" name="age" placeholder="3">
       </p>
     </section>
@@ -58,14 +59,14 @@
           </li>
           <li class="filter-option">
             <label for="filter-gain">
-            <input class="visually-hidden filter-input" type="radio" name="option" id="filter-gain" checked>
+            <input class="visually-hidden filter-input" type="radio" name="option" id="filter-gain">
             <span class="radio-indicator"></span>
             Gain weight</label>
             <li class="filter-option">
               <label for="filter-ask">
-              <input class="visually-hidden filter-input" type="radio" name="option" id="filter-ask" checked>
+              <input class="visually-hidden filter-input" type="radio" name="option" id="filter-ask">
               <span class="radio-indicator"></span>
-              I don'tknow (and need your advice)</label>
+              I don't know <br> (and need your advice)</label>
             </li>
           </li>
 
@@ -74,7 +75,11 @@
     </section>
 
     <section>
-      <h4>Contact details (of yhe owner of the cat)</h4>
+      <div class="green-line-title">
+      <h4 class="line-title">Contact details <br> (of the owner)</h4>
+      <span class="green-line green-line--margintop"></span>
+      </div>
+      <div class="contacts">
       <p>
         <label class="label-email" for="email">E-mail</label>
         <input class="input-email" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
@@ -83,17 +88,23 @@
         <label class="label-mob" for="mob">Mobile</label>
         <input class="input-mob" id="mib" type="text" name="mob" placeholder="+31 0 111 111 111">
       </p>
+    </div>
     </section>
 
     <section>
-      <h4>Your comment:</h4>
-      <textarea name="comment" rows="8" cols="80" style="width:90%; height:150px;">Tell us more about the character and the habits of your pet</textarea>
+      <div class="green-line-title">
+      <h4 class="line-title">Your comment:</h4>
+      <span class="green-line"></span>
+      </div>
+      <textarea class="contacts options__textarea" name="comment" rows="8" cols="80" style="width:90%; height:150px;">Tell us more about the character and the habits of your pet</textarea>
     </section>
 
-    <section class="extra">
-        <div class="filter__extra">
-        <h4>Extra:</h4>
-          <ul>
+    <section>
+      <div class="green-line-title">
+      <h4 class="line-title">Extra options:</h4>
+      <span class="green-line"></span>
+      </div>
+          <ul class="extra-filter__options">
             <li class="filter-option">
               <label for="filter-sweetener">
               <input class="visually-hidden filter-input" type="checkbox" name="sweetener" id="filter-sweetener" checked>
@@ -119,11 +130,9 @@
               Vitamins</label>
             </li>
           </ul>
-        </div>
-
     </section>
 
-    <input type="submit" name="request" value="Send my request" class="button">
+    <input class="options__button button" type="submit" name="request" value="Send my request" class="button">
 
     </form>
 
@@ -167,7 +176,25 @@
     </div>
   </footer>
 
+  <script>
 
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  }
+);
+
+  </script>
 
   </body>
 </html>
