@@ -18,14 +18,14 @@
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active"><a>Main</a></li>
         <li class="site-list__item"><a href="catalog.html">Catalog</a></li>
-        <li class="site-list__item"><a href="programm.html">Choose the programm</a></li>
+        <li class="site-list__item"><a href="options.html">Choose the programm</a></li>
       </ul>
     </nav>
   </div>
     <img class="background-image" src="img/background.png">
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <section class="slogan">
       <div class="slogan__wrapper">
         <h1 class="slogan__title">Functional meal <br>for cats.</h1>
@@ -41,15 +41,15 @@
 
       <div class="options__wrapper">
       <ul class="options__list">
-        <li class="options__item options__item--lose">
-          <h3 class="options__title">Lose weight</h2>
+        <li class="options__item">
+          <h3 class="options__title options__title--lose">Lose weight</h2>
           <p class="options__description">The weight of your cat is more than of your dog? and he can't jump and climb on the trees anymore? So it is a diet time! Cat Energy SLIM will help your pet to lose weight!</p>
-          <a href="catalog.html">Catalog SLIM</a>
+          <a class="options__arrow" href="catalog.html">Catalog SLIM</a>
           </li>
-          <li class="options__item options__item--gain">
-            <h3 class="options__title">Gain weight</h2>
-            <p class="options__description">Earn credibility among alley cats and even dogs!? Cat Energy PRO will help your pet to gain weight!</p>
-            <a href="catalog.html">Catalog PRO</a>
+          <li class="options__item">
+            <h3 class="options__title options__title--gain">Gain weight</h2>
+            <p class="options__description">Earn credibility among alley cats and even dogs on the street!? <br>Cat Energy PRO will help your pet to gain weight!</p>
+            <a class="options__arrow" href="catalog.html">Catalog PRO</a>
             </li>
       </ul>
       </div>
@@ -131,6 +131,26 @@
 
     </div>
   </footer>
+
+  <script>
+
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  }
+);
+
+  </script>
 
   </body>
 </html>
