@@ -293,16 +293,18 @@ input[type="radio"].visually-hidden {
   list-style: none;
   box-sizing: border-box;
   display: block;
-  min-height: 265px;
+  min-height: 245px;
   background-color: #f2f2f2;
   margin: 15px auto;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  padding-bottom: 0;
+  line-height: 24px; }
 
 .options__title {
   font-size: 22px;
   text-transform: uppercase;
   padding: 20px;
-  padding-left: 80px;
+  padding-left: 90px;
   position: relative; }
 
 .options__title::before {
@@ -324,10 +326,15 @@ input[type="radio"].visually-hidden {
   top: 1px;
   background-repeat: no-repeat;
   display: block;
-  height: 75px;
+  height: 95px;
   width: 75px;
   background-image: url(../img/catpro.svg);
-  background-position: 50% 20%; }
+  background-position: 50% 50%; }
+
+@media (min-width: 333px) {
+  .options__title--gain::after {
+    height: 100px;
+    background-position: 50% 20%; } }
 
 .options__title--lose::after {
   content: " ";
@@ -336,15 +343,24 @@ input[type="radio"].visually-hidden {
   bottom: 1px;
   background-repeat: no-repeat;
   display: block;
-  height: 75px;
+  height: 80px;
   width: 75px;
   background-image: url(../img/catslim.svg);
   background-position: 50% 50%; }
 
+@media (min-width: 333px) {
+  .options__title--lose::after {
+    height: 75px;
+    background-position: 50% 20%; } }
+
+.options__description {
+  font-size: 16px;
+  padding-bottom: 15px; }
+
 .options__arrow {
   display: block;
   text-transform: uppercase;
-  border-top: 1px solid #a6a6a6;
+  border-top: 1px solid #d9d9d9;
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -395,7 +411,34 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   display: block;
   min-height: 80px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  padding-left: 70px;
+  position: relative;
+  font-size: 16px; }
+
+.benefits__item::before {
+  content: " ";
+  position: absolute;
+  left: 5px;
+  bottom: 35px;
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  display: block;
+  height: 54px;
+  width: 54px;
+  background-position: 50% 50%; }
+
+.benefits__item:first-child::before {
+  background-image: url(../img/advantage-1.png); }
+
+.benefits__item:nth-child(2)::before {
+  background-image: url(../img/advantage-2.png); }
+
+.benefits__item:nth-child(3)::before {
+  background-image: url(../img/advantage-3.png); }
+
+.benefits__item:last-child::before {
+  background-image: url(../img/advantage-4.png); }
 
 @media (min-width: 768px) {
   .benefits__list {
@@ -425,6 +468,105 @@ input[type="radio"].visually-hidden {
 
 .example__extra-title {
   display: none; }
+
+.example__info {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 24px; }
+
+.example__numbers {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between; }
+
+.example__numbers p {
+  padding: 15px 35px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3%;
+  width: 180px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative; }
+
+.example__numbers__kilo::after {
+  content: "weight loss";
+  text-transform: lowercase;
+  font-size: 14px;
+  position: absolute;
+  left: 51px;
+  top: 40px;
+  background-color: #f2f2f2;
+  display: block;
+  height: 30px;
+  width: 60px; }
+
+.example__numbers__days::after {
+  content: "spended time";
+  text-transform: lowercase;
+  font-size: 14px;
+  position: absolute;
+  left: 45px;
+  top: 40px;
+  background-color: #f2f2f2;
+  display: block;
+  height: 30px;
+  width: 80px; }
+
+.example__expenses {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 25px auto; }
+
+.example__cat {
+  margin: 10px auto; }
+
+.block {
+  display: block; }
+
+.none {
+  display: none; }
+
+.choose-cat {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.choose-option {
+  position: relative;
+  cursor: pointer; }
+
+input[type="radio"] + .radio-indicator--left {
+  position: absolute;
+  left: 90px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #68b738;
+  border-radius: 50%;
+  bottom: 1px; }
+
+input[type="radio"]:checked + .radio-indicator--left {
+  background-color: #68b738; }
+
+input[type="radio"] + .radio-indicator--right {
+  position: absolute;
+  right: 70px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #68b738;
+  border-radius: 50%;
+  bottom: 1px; }
+
+input[type="radio"]:checked + .radio-indicator--right {
+  background-color: #68b738; }
 
 @media (min-width: 768px) {
   .example {
