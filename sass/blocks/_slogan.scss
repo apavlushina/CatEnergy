@@ -1,0 +1,102 @@
+.slogan {
+  width: 100%;
+  }
+
+.slogan__wrapper {
+  width: 90%;
+  padding: 2%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-size: cover;
+  background-color: $bright-color;
+  background-repeat: no-repeat;
+  background-image: url("../img/green-cat.png");
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 1.2;
+  padding-bottom: 40%;
+  text-transform: uppercase;
+}
+
+
+.slogan__image {
+  display: block;
+  margin: auto;
+  margin-top: -22%;
+
+}
+
+.slogan__link {
+  display: none !important;
+}
+
+.slogan__link--extra {
+  margin-top: 2%;
+  width: 90%;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .slogan__wrapper {
+  color: black;
+  background-color: inherit;
+  background-image: none;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 50px;
+  line-height: 1.4;
+  font-size: 25px;
+  position: relative;
+  z-index: 2;
+  }
+
+  .slogan__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+
+  .slogan__image {
+    width: 80%;
+    padding-left: 5%;;
+    margin-top: -50%;
+    position: relative;
+  }
+
+  .slogan__link {
+    display: block;
+    margin-left: 0;
+    margin-top: 5%;
+    width: 40%;
+    font-size: 16px;
+    z-index: 3;
+    position: relative;
+  }
+
+  .slogan__link--extra {
+    display: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .slogan__wrapper {
+    width: 1200px;
+    height: 500px;
+    color: black;
+    margin: 0;
+    padding-left: 10%;
+  }
+
+  .slogan__link {
+    width: 40%;
+  }
+    .slogan__image {
+      margin-top: -40%;
+      margin-left: 30%;
+      width: 45%;
+    }
+
+}

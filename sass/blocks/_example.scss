@@ -1,0 +1,216 @@
+.example {
+  width: 100%;
+  background-color: $main-color;
+
+}
+
+.example__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 10%;
+}
+
+.example__extra-title {
+  display: none;
+}
+
+.example__info {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.example__numbers {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.example__numbers p {
+  padding: 15px 35px;
+  border: 1px solid darken($main-color, 10%);
+  border-radius: 3%;
+  width: 180px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.example__numbers__kilo::after {
+  content: "weight loss";
+  text-transform: lowercase;
+  font-size: 14px;
+  position: absolute;
+  left: 51px;
+  top: 40px;
+  background-color: $main-color;
+  display: block;
+  height: 30px;
+  width: 60px;
+}
+
+.example__numbers__days::after {
+  content: "spended time";
+  text-transform: lowercase;
+  font-size: 14px;
+  position: absolute;
+  left: 45px;
+  top: 40px;
+  background-color: $main-color;
+  display: block;
+  height: 30px;
+  width: 80px;
+}
+
+.example__expenses {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 25px auto;
+  text-transform: uppercase;
+}
+
+.example__cat {
+  margin: 10px auto;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.choose-cat {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.choose-option {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + .radio-indicator--left {
+  position: absolute;
+  left: 90px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #68b738;
+  border-radius: 50%;
+  bottom: 1px;
+  }
+
+  input[type="radio"]:checked + .radio-indicator--left {
+    background-color: $bright-color;
+    }
+
+input[type="radio"] + .radio-indicator--right {
+    position: absolute;
+    right: 70px;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #68b738;
+    border-radius: 50%;
+    bottom: 1px;
+    }
+
+input[type="radio"]:checked + .radio-indicator--right {
+      background-color: $bright-color;
+  }
+
+
+@media (min-width: $tablet-width) {
+  .example {
+  background-color: white;
+
+  }
+
+  .example__wrapper {
+    border-top: 0.5px solid #dcdcdc;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .example__cat-wrapper {
+    background-image: linear-gradient(white 25%, $main-color 25%, $main-color 100%);
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .example__numbers {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  .example__numbers__kilo::after,
+  .example__numbers__days::after {
+    background-color: white;
+  }
+
+  .example__expenses {
+    width: 25%;
+    float: right;
+    text-align: right;
+    margin-top: -95px;
+    line-height: 1.5;
+  }
+
+  // .example__cat {
+  //   margin-top: -15%;
+  // }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .example {
+    margin-top: 3%;
+  }
+
+  .example__title {
+    display: none;
+
+  }
+
+  .example__extra-title {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .example__wrapper {
+    margin-top: 40px;
+    padding-left: 15%;
+    width: 100%;
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+  }
+
+
+
+  .example__extra-wrapper,
+  .example__cat-wrapper {
+    width: 50%;
+    margin: 0;
+    padding: 3%;
+  }
+
+  .example__cat {
+    margin-top: -25%;
+  }
+
+}

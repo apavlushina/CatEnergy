@@ -1,0 +1,128 @@
+.benefits {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.benefits__wrapper{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.benefits__list {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.benefits__item {
+  list-style: none;
+  box-sizing: border-box;
+  display: block;
+  min-height: 80px;
+  margin-top: 5px;
+  padding-left: 70px;
+  position: relative;
+  font-size: 16px;
+}
+
+.benefits__item::before {
+  content: " ";
+  position: absolute;
+  left: 5px;
+  bottom: 35px;
+  background-repeat: no-repeat;
+  background-color: $bright-color;
+  display: block;
+  height: 54px;
+  width: 54px;
+  background-position: 50% 50%;
+}
+
+.benefits__item:first-child::before {
+    background-image: url(../img/advantage-1.png);
+}
+
+.benefits__item:nth-child(2)::before {
+    background-image: url(../img/advantage-2.png);
+}
+
+.benefits__item:nth-child(3)::before {
+    background-image: url(../img/advantage-3.png);
+}
+
+.benefits__item:last-child::before {
+    background-image: url(../img/advantage-4.png);
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .benefits__item {
+    width: 40%;
+    height: 55%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+  .benefits__item::before {
+    left: 0;
+    top: 0;
+    height: 74px;
+    width: 74px;
+  }
+
+  .benefits__item::after {
+    content: "1";
+    font-size: 250px;
+    color: #f2f2f2;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    display: block;
+    height: 164px;
+    width: 50px;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .benefits__item:nth-child(2)::after {
+      content: "2";
+  }
+
+  .benefits__item:nth-child(3)::after {
+      content: "3";
+  }
+
+  .benefits__item:last-child::after {
+      content: "4";
+  }
+
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .benefits__wrapper {
+  width: 1200px;
+  }
+
+  .benefits__list {
+    margin-bottom: 30px;
+  }
+
+  .benefits__item {
+    width: 200px;
+  }
+
+
+}

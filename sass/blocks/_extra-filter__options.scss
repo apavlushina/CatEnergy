@@ -1,0 +1,71 @@
+.extra-filter__options {
+  text-transform: uppercase;
+  line-height: 35px;
+  width: 90%;
+}
+
+
+.filter-option {
+  margin-left: -18px;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-size: 30px 30px;
+    border: 2px solid $main-color;
+  }
+
+  input[type="checkbox"]:checked + .checkbox-indicator {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-size: 15px 15px;
+      background-image: url('../img/mark.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+.options__button {
+  outline: none;
+  margin: 5%;
+  border: none;
+  width: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-filter__options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 2%;
+  }
+
+  .filter-option {
+    min-width: 40%;
+  }
+
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .extra-filter__options {
+    margin-left: 0;
+  }
+
+  .filter-option {
+    min-width: 10%;
+    margin-left: 3.5%;
+  }
+
+
+}

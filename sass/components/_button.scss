@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: $bright-color;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  z-index: 10;
+  outline: none;
+}

@@ -1,0 +1,57 @@
+.filter__options {
+  text-transform: uppercase;
+  line-height: 29px;
+  border-top: 1px solid $main-color;
+  border-bottom: 1px solid $main-color;
+}
+
+.filter-option {
+  margin-left: -10px;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-size: 30px 30px;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+  }
+
+  input[type="radio"]:checked + .radio-indicator {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background-size: 30px 30px;
+      background-color: $bright-color;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px $main-color;
+    }
+
+.options__textarea {
+      outline: none;
+    }
+
+.options__textarea:active,
+.options__textarea:hover {
+  border-color: $bright-color;
+  outline: none;
+}
+
+@media (min-width: $tablet-width) {
+    .filter__options {
+      margin: 5%;
+      border: 1px solid $main-color;
+    }
+
+    .filter-option br {
+        display: none;
+      }
+}

@@ -1,0 +1,36 @@
+.catalog {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog__list {
+  width: 320px;
+  margin: 5px auto;
+  padding: 15px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item {
+  width: 320px;
+  min-height: 210px;
+  margin: 5px auto;
+  padding: 10px 15px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.catalog__item::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  margin: 0 auto;
+  right: 0px;
+  bottom: 1px;
+  left: 0px;
+  height: 1px;
+  background-color: $main-color;
+}

@@ -1,0 +1,57 @@
+body {
+  min-width: 320px;
+  max-width: 1800px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial MT", sans-serif;
+  color: #111;
+  font-style: normal;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+input:hover,
+input:active {
+  outline: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden  {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

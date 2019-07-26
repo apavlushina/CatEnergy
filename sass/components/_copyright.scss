@@ -1,0 +1,32 @@
+.copyright {
+  padding: 30px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #444;
+  padding-right: 15px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .copyright {
+    min-width: 80px;
+  }
+
+}
