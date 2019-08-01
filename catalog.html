@@ -10,61 +10,210 @@
 
 
 
-  <header class="page-header">
-    <div class="page-header__wrapper">
-    <img class="page-header__logo-image" src="img/logo-mobile.png"  width="35px" height="35px" alt="Logo">
-    <img class="page-header__title" src="img/logo-name-mobile.png"  alt="CAT ENERGY">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Open <br>menu</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a>Main</a></li>
-        <li class="site-list__item"><a href="catalog.html">Catalog</a></li>
-        <li class="site-list__item"><a href="options.html">Choose the programm</a></li>
-      </ul>
-    </nav>
-  </div>
-  </header>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+      <img class="page-header__logo-image" src="img/logo-mobile.png"  width="35px" height="35px" alt="Logo">
+      <img class="page-header__title" src="img/slogan-logo.png"  alt="CAT ENERGY">
+      <img class="page-header__title-logo-image" src="img/logo-name-tablet.png" alt="Logo">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+        <ul class="main-nav__list site-list site-list--black">
+          <li class="site-list__item"><a href="index.html">Main</a></li>
+          <li class="site-list__item site-list__item--active"><a>Catalog</a></li>
+          <li class="site-list__item"><a href="options.html">Choose the programm</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
 
   <main class="catalog">
 
-    <h1 class="main-title bordertop borderbottom">Product catalog</h1>
+    <h1 class="request-title borderbottom">Product catalog</h1>
     <ul class="catalog__list">
-      <li class="catalog__item catalog__item--1">
-        <img class="catalog__image" src="img/ci-1" alt="CAT Energy" width="140px">
+      <li class="catalog__item">
+        <img class="catalog__image catalog__image--small" src="img/ci-1.png" alt="CAT Energy" width="140px">
         <h3 class="catalog__product-title">CAT ENERGY PRO 500g</h3>
-        <dl class="catalog__prod-info">
-          <dt>Volume:</dt>
-          <dd>500gr</dd>
-          <dt>Taste:</dt>
-          <dd>Chicken</dd>
-          <dt>Price</dt>
-          <dd>10€</dd>
-        </dl>
-        <a class="button catalog__button" href="#">Add to bag</a>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>500gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Chicken</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>10€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
       </li>
-      <li class="catalog__item catalog__item--2">
-        <img class="catalog__image" src="img/ci-2" alt="CAT Energy" width="140px">
+      <li class="catalog__item">
+        <img class="catalog__image" src="img/ci-1.png" alt="CAT Energy" width="140px">
         <h3 class="catalog__product-title">CAT ENERGY PRO 1000g</h3>
-        <dl class="catalog__prod-info">
-          <dt>Volume:</dt>
-          <dd>1000gr</dd>
-          <dt>Taste:</dt>
-          <dd>Chicken</dd>
-          <dt>Price</dt>
-          <dd>15€</dd>
-        </dl>
-        <a class="button"href="#">Add to bag</a>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>1000gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Chicken</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>15€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
       </li>
-      <li>
-        <p>Show me 100500 goods more</p>
-        <p>We have much more different tastes!</p>
-        <a href="#">Show me all!</a>
+      <li class="catalog__item">
+        <img class="catalog__image catalog__image--small" src="img/ci-2.png" alt="CAT Energy" width="140px">
+        <h3 class="catalog__product-title">CAT ENERGY PRO 500g</h3>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>500gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Fish</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>10€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
       </li>
-      <h4 class="main-title">Something extra:</h4>
+      <li class="catalog__item">
+        <img class="catalog__image" src="img/ci-2.png" alt="CAT Energy" width="140px">
+        <h3 class="catalog__product-title">CAT ENERGY PRO 1000g</h3>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>1000gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Fish</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>10€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
+      </li>
+      <li class="catalog__item">
+        <img class="catalog__image catalog__image--small" src="img/ci-3.png" alt="CAT Energy" width="140px">
+        <h3 class="catalog__product-title">CAT ENERGY PRO 500g</h3>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>500gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Buckwheat</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>10€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
+      </li>
+      <li class="catalog__item">
+        <img class="catalog__image" src="img/ci-3.png" alt="CAT Energy" width="140px">
+        <h3 class="catalog__product-title">CAT ENERGY PRO 1000g</h3>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>1000gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Buckwheat</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>10€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
+      </li>
+      <li class="catalog__item">
+        <img class="catalog__image" src="img/ci-4.png" alt="CAT Energy" width="140px">
+        <h3 class="catalog__product-title">CAT ENERGY PRO 500g</h3>
+        <table class="catalog__prod-info">
+          <tr>
+            <td>Volume:</td>
+            <td>500gr</td>
+          </tr>
+          <tr>
+            <td>Taste:</td>
+            <td>Rice</td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td>10€</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Add to bag</a>
+      </li>
+
+      <li class="catalog__item catalog__item--more">
+        <h3 class="catalog__product-title catalog__product-title--more">Show me 100500 items more</h3>
+        <p>In fact we have much more different tastes!</p>
+        <a class="button button--grey" href="#">Show me all!</a>
+      </li>
+
+      </ul>
+
+
+      <section>
+
+      <div class="green-line-title">
+      <span class="green-line--extra"></span>
+      <h4 class="line-title">Something extra:</h4>
+      <span class="green-line"></span>
+      </div>
+
+      <ul class="catalog__list">
+        <li class="catalog__item__extra">
+          <h3 class="catalog__product-title">Sweetener</h3>
+          <p>1 pack (100gr)</p>
+          <p class="catalog__item__extra__price">2 euros</p>
+          <a class="button catalog__button" href="#">Add to bag</a>
+        </li>
+        <li class="catalog__item__extra">
+          <h3 class="catalog__product-title">Drinking water</h3>
+          <p>5 litres (100gr)</p>
+          <p class="catalog__item__extra__price">1 euro</p>
+          <a class="button catalog__button" href="#">Add to bag</a>
+        </li>
+        <li class="catalog__item__extra">
+          <h3 class="catalog__product-title">Milk</h3>
+          <p>1 liter</p>
+          <p class="catalog__item__extra__price">2 euros</p>
+          <a class="button catalog__button" href="#">Add to bag</a>
+        </li>
+        <li class="catalog__item__extra">
+          <h3 class="catalog__product-title">Vitamins</h3>
+          <p>1 pack (30gr)</p>
+          <p class="catalog__item__extra__price">5 euros</p>
+          <a class="button catalog__button" href="#">Add to bag</a>
+        </li>
+
+      </ul>
+
+      </section>
 
       <p class="promo">Order all <br> - and take a pack for your cat <br>for free!</p>
 
-    </ul>
+
 
     <section class="for-dilers for-dilers--grey">
       <b class="for-dilers__invite">We are inviting dillers for cooperation!</b>
@@ -73,16 +222,17 @@
 
     <div class="map">
       <iframe
-    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.619325308476!2d30.321104251798456!3d59.93845866898609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstr.+Bolshaya+Konushennaya%2C+build.19%2F8!5e0!3m2!1sru!2snl!4v1561644409187!5m2!1sru!2snl" width="320px"
-    height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6076646602064!2d30.317445718702146!3d59.93865214663683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2snl!4v1563892981162!5m2!1sru!2snl" width="100%"
+    height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <img class="map-pin" src="img/map-pin.png" alt="We are here!">
     </div>
 
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img class="footer-logo" src="img/slogan-logo.png"  alt="CAT ENERGY">
-      <nav class="main-nav">
+    <img class="footer-logo" src="img/slogan-logo.png"  alt="CAT ENERGY" width="90">
+
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -105,7 +255,25 @@
     </div>
   </footer>
 
+  <script>
 
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  }
+);
+
+  </script>
 
   </body>
 </html>

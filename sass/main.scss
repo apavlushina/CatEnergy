@@ -10,6 +10,16 @@
 @import 'base/typography';
 // @import 'blocks/navigation';
 
+@import 'components/main-nav';
+@import 'components/button';
+@import 'components/main-title';
+@import 'components/social';
+@import 'components/copyright';
+@import 'components/site-list';
+@import 'components/request';
+@import 'components/green-line-title';
+@import 'components/promo';
+
 @import 'blocks/header';
 @import 'blocks/slogan';
 @import 'blocks/options';
@@ -23,14 +33,7 @@
 @import 'blocks/extra-filter__options';
 
 
-@import 'components/main-nav';
-@import 'components/button';
-@import 'components/main-title';
-@import 'components/social';
-@import 'components/copyright';
-@import 'components/site-list';
-@import 'components/request';
-@import 'components/green-line-title';
+
 
 
 // @import 'pages/home';

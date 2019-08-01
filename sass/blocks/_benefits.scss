@@ -113,15 +113,14 @@
 @media (min-width: $desktop-width) {
 
   .benefits__wrapper {
-  width: 1200px;
+  width: 90%;
   }
 
-  .benefits__list {
-    margin-bottom: 30px;
-  }
 
   .benefits__item {
-    width: 200px;
+    width: 210px;
+    font-size: 18px;
+    font-weight: 26px;
   }
 
 

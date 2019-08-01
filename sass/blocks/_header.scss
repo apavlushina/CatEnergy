@@ -1,7 +1,6 @@
 .page-header__wrapper {
   width: 90%;
   margin: 0 auto;
-  // margin-bottom: 5px;
   padding: 4%;
   display: flex;
   box-sizing: border-box;
@@ -218,6 +217,7 @@
     top: 0;
     right: 0;
     width: 50%;
+    max-height: 860px;
   }
 
   .main-nav__list {

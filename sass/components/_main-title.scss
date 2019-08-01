@@ -17,3 +17,9 @@
 .borderbottom {
   border-bottom: 1px solid $main-color;
 }
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    font-size: 34px;
+  }
+}

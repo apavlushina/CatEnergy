@@ -31,7 +31,7 @@
 }
 
 .example__numbers p {
-  padding: 15px 35px;
+  padding: 15px 30px;
   border: 1px solid darken($main-color, 10%);
   border-radius: 3%;
   width: 180px;
@@ -45,7 +45,7 @@
   text-transform: lowercase;
   font-size: 14px;
   position: absolute;
-  left: 51px;
+  left: 40px;
   top: 40px;
   background-color: $main-color;
   display: block;
@@ -58,7 +58,7 @@
   text-transform: lowercase;
   font-size: 14px;
   position: absolute;
-  left: 45px;
+  left: 40px;
   top: 40px;
   background-color: $main-color;
   display: block;
@@ -116,7 +116,7 @@ input[type="radio"] + .radio-indicator--left {
     background-color: $bright-color;
     }
 
-input[type="radio"] + .radio-indicator--right {
+  input[type="radio"] + .radio-indicator--right {
     position: absolute;
     right: 70px;
     width: 15px;
@@ -166,11 +166,6 @@ input[type="radio"]:checked + .radio-indicator--right {
     margin-top: -95px;
     line-height: 1.5;
   }
-
-  // .example__cat {
-  //   margin-top: -15%;
-  // }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -186,31 +181,73 @@ input[type="radio"]:checked + .radio-indicator--right {
 
   .example__extra-title {
     display: block;
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
   }
 
   .example__wrapper {
-    margin-top: 40px;
-    padding-left: 15%;
     width: 100%;
-    background-color: $main-color;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border: none;
+    background-color: $main-color;
+    padding-left: 2.5%;
+    margin-top: 50px;
   }
-
-
 
   .example__extra-wrapper,
-  .example__cat-wrapper {
-    width: 50%;
+ {
+    width: 35%;
     margin: 0;
-    padding: 3%;
+    padding: 0 3%;
   }
 
-  .example__cat {
-    margin-top: -25%;
+  .example__info {
+    font-size: 18px;
+    font-weight: 26px;
   }
+
+  .example__numbers {
+    width: 90%;
+  }
+
+  .example__numbers__kilo::after,
+  .example__numbers__days::after {
+    background-color: $main-color;
+  }
+
+  .example__expenses {
+    padding-top: 23%;
+    width: 110%;
+    text-align: center;
+    padding-bottom: 7%;
+  }
+
+    .example__cat-wrapper {
+      width: 45%;
+      margin: 0;
+      padding: 0 3%;
+      background-image: none;
+    }
+
+  .example__cat {
+    margin-top: -20%;
+    width: 500px;
+    padding-bottom: 60px;
+  }
+
+  .choose-cat {
+    width: 450px;
+
+  }
+
+  input[type="radio"] + .radio-indicator--left {
+    left:100px;
+    }
+
+
+    input[type="radio"] + .radio-indicator--right {
+      right: 80px;
+      }
 
 }

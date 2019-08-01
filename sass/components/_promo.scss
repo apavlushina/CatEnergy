@@ -1,0 +1,25 @@
+.promo {
+  color: white;
+  background-color: $bright-color;
+  text-align: center;
+  margin: 5% auto;
+  height: 285px;
+  width: 280px;
+  padding-top: 190px;
+  box-sizing: border-box;
+  background-image: url("../img/promo-back.png");
+  position: relative;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  left: 115px;
+  bottom: 165px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 60px;
+  width: 55px;
+  background-position: 50% 50%;
+  background-image: url("../img/promo-small.svg");
+}
