@@ -9,6 +9,7 @@
   box-sizing: border-box;
   background-image: url("../img/promo-back.png");
   position: relative;
+  font-weight: bold;
 }
 
 .promo::before {
@@ -22,4 +23,26 @@
   width: 55px;
   background-position: 50% 50%;
   background-image: url("../img/promo-small.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 90%;
+    background-size: cover;
+    background-position: 0 400px;
+    text-align: left;
+    padding: 0;
+    padding-left: 55%;
+  }
+
+  .promo p {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 100px;
+  }
+
+  .promo::before {
+    bottom: 115px;
+  }
+
 }
