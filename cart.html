@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Cat Energy</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <img class="page-header__logo-image" src="img/logo-mobile.png" width="35px" height="35px" alt="Logo">
+            <img class="page-header__title" src="img/slogan-logo.png" alt="CAT ENERGY">
+            <img class="page-header__title-logo-image" src="img/logo-name-tablet.png" alt="Logo">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+                <ul class="main-nav__list site-list site-list--black">
+                    <li class="site-list__item"><a href="index.html">Main</a></li>
+                    <li class="site-list__item site-list__item--active"><a>Catalog</a></li>
+                    <li class="site-list__item"><a href="options.html">Choose the programm</a></li>
+                    <li class="site-list__item"><a href="#"></a>Shopping Cart</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog">
+
+        <h1 class="request-title borderbottom">Your shopping cart</h1>
+        <ul class="catalog__list">
+            <li id="product-1" class="catalog__item">
+                <table id="shopping-cart" class="catalog__prod-info">
+                    <tr>
+                        <td>Product name:</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total price</td>
+                    </tr>
+                </table>
+            </li>
+
+        </ul>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <img class="footer-logo" src="img/slogan-logo.png" alt="CAT ENERGY" width="90">
+
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vkontakte" href="#" area-label="Vkontakte"><img
+                                src="img/vk.png" height="" alt="Logo Vkontakte"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--insta" href="#" area-label="Instagram"><img
+                                src="img/insta.png" height="" alt="Logo Insta"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="#" area-label="Facebook"><img
+                                src="img/fb.png" height="" alt="Logo Facebook"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page-footer__copyright copyright">
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <img src="img/logo-html.svg" alt="Logo HtmlAcademy">
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function () {
+            if (navMain.classList.contains('main-nav--closed')) {
+                navMain.classList.remove('main-nav--closed');
+                navMain.classList.add('main-nav--opened');
+            } else {
+                navMain.classList.add('main-nav--closed');
+                navMain.classList.remove('main-nav--opened');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
